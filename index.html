@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Character</title>
+    <title>Triangle</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
@@ -9,74 +9,30 @@
   </head>
   <body>
     <div class="container">
-      <h1>Character</h1>
-      <form id="character">
 
-        <p>What is your favorite color?</p>
-        <div class="radio">
-          <label>
-            <input type="radio" name="color" value="1" checked>
-            blue
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="color" value="2">
-            red
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="color" value="3">
-            yellow
-          </label>
+
+      <h1>Triangle</h1>
+      <form id="triangle">
+        <div class="form-group">
+          <label for="input1">1st side:</label>
+          <input id="input1" class="form-control" type="text">
         </div>
 
-        <p>Favorite Movie?</p>
-        <div class="radio">
-          <label>
-            <input type="radio" name="movie" value="1" checked>
-            Forrest Gump
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="movie" value="2">
-            Remember the Titans
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="movie" value="3">
-            Parent Trap
-          </label>
+        <div class="form-group">
+          <label for="input2">2nd side:</label>
+          <input id="input2" class="form-control" type="text">
         </div>
 
-        <p>Favorite Vacation Destination?</p>
-        <div class="radio">
-          <label>
-            <input type="radio" name="vacation" value="1" checked>
-            Hawaii
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="vacation" value="2">
-            Miami
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="vacation" value="3">
-            Orlando
-          </label>
+        <div class="form-group">
+          <label for="input3">3nd side:</label>
+          <input id="input3" class="form-control" type="text">
         </div>
 
-        <button type="submit" class="btn btn-dark">Click for results!</button>
+        <button type="submit" class="btn">Go!</button>
       </form>
 
       <div id="output">
-        <span id="answer"></span>
+
       </div>
 
     </div>

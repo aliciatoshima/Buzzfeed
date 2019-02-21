@@ -7,32 +7,30 @@
 // Business logic not included because it will remain the same.
 
 $(document).ready(function() {
-  $("form#character").submit(function() {
-    event.preventDefault();
-    var color = parseInt($("input:radio[name=color]:checked").val());
-    var movie = parseInt($("input:radio[name=movie]:checked").val());
-    var vacation = parseInt($("input:radio[name=vacation]:checked").val());
+  $("form#triangle").submit(function() {
 
-    var result = color + movie + vacation
+    var input1 = parseInt($("input#input1").val());
+    var input2 = parseInt($("input#input2").val());
+    var input3 = parseInt($("input#input3").val());
 
-    if (result < 4) {
-      answer = "Michael Scott"
-      var img = new Image();
-      img.src = "https://www.bluleadz.com/hs-fs/hubfs/Blog_pics/PrisonMike.jpeg?width=598&name=PrisonMike.jpeg";
-    } else if (result > 6) {
-      answer = "Pam"
-      var img = new Image();
-      img.src = "https://uproxx.files.wordpress.com/2016/11/pam-the-office4.jpg?quality=100&w=650";
-    } else  {
-     answer = "Dwight"
-     var img = new Image();
-     img.src = "https://www.cheatsheet.com/wp-content/uploads/2018/01/Dwight-Schrute.jpg";
+
+    if (input1 === input2 && input2 === input3) {
+      answer = "Equilateral"
+    } else if (input1+ input2 <= input3
+      || input2+ input3 <= input2
+      || input3+ input1 <= input2 ) {
+      answer = "Not a Triangle!!!"
+    } else if ((input1 !== input2 && input2 === input3)
+    || (input1 !== input2 && input1 === input3)
+    || (input3 !== input2 && input2 === input1)
+  ) {
+    answer = "Isosceles"
+    } else {
+      answer = "scalene"
     }
 
     $("#output").text(answer);
     //$("#output").show();
-    $("#output").append(img);
-    $("#output").show();
 
     event.preventDefault();
   });

@@ -4,3 +4,7 @@
   padding: 4px;
   margin: 5%;
 }
+
+#output {
+  display: hide;
+}

@@ -17,25 +17,34 @@ $(document).ready(function() {
     var dog = $("input:radio[name=dog]:checked").val();
 
     var concat = sortAlpha(like.concat(exercise).concat(food).concat(sleep).concat(dog));
-    alert(concat)
 
     if (name) {
-      name;
+       name;
+       debugger;
+      if (concat.match(/^.aaa*/) || concat.match(/^*aa*/)) {
+         answer = "pinapple Nemo";
+      } else if (concat.match(/^*bbb*/) || concat.match(/^*bb*/)) {
+         answer = "Purrito Nemo";
+      } else if (concat.match(/^*ccc*/) || concat.match(/^*cc*/)) {
+         answer = "Bean Bag Nemo!";
+      } else {
+         answer ="Christmas Nemo, just because!"
+      }
     } else {
-      name = "Kaonashi";
+       name = "Kaonashi";
+      if (concat.match(/^.aaa*/) || concat.match(/^*aa*/)) {
+         answer = "pinapple Nemo";
+      } else if (concat.match(/^*bbb*/) || concat.match(/^*bb*/)) {
+         answer = "Purrito Nemo";
+      } else if (concat.match(/^*ccc*/) || concat.match(/^*cc*/)) {
+         answer = "Bean Bag Nemo!";
+      } else {
+         answer ="Christmas Nemo, just because!"
+      }
     }
-
-    if (concat.match(/^*aaa*/) || concat.match(/^*aa*/)) {
-      alert("pinapple nemo")
-    } else if (concat.match(/^*bbb*/) || concat.match(/^*bb*/)) {
-      alert("Purrito nemo")
-    } else if (concat.match(/^*ccc*/) || concat.match(/^*cc*/)) {
-      alert("Bean Bag nemo")
-    }
-
 
     $("#name1").text(name);
-    // $("#output").text(like);
+     $("#answer1").text(answer);
     // $("#output").text(exercise);
     // $("#output").text(food);
     // $("#output").text(sleep);

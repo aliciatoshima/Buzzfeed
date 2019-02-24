@@ -24,16 +24,18 @@ $(document).ready(function() {
 
     var purrito = new Image();
     purrito.src = "images/purrito.JPG";
-    pineapple.alt = "pineapple cat";
-    pineapple.style.width = "300px";
+    purrito.alt = "purrito cat";
+    purrito.style.width = "300px";
 
     var bean_bag = new Image();
-    bean_bag.src = "https://www.bluleadz.com/hs-fs/hubfs/Blog_pics/PrisonMike.jpeg?width=598&name=PrisonMike.jpeg";
-    pineapple.alt = "pineapple cat";
-    pineapple.style.width = "300px";
+    bean_bag.src = "images/bean_bag.JPG";
+    bean_bag.alt = "bean bag cat";
+    bean_bag.style.width = "300px";
 
     var img = new Image();
-    img.src = "https://www.bluleadz.com/hs-fs/hubfs/Blog_pics/PrisonMike.jpeg?width=598&name=PrisonMike.jpeg";
+    img.src = "images/christmas.JPG";
+    img.alt = "christmas cat";
+    img.style.width = "300px";
 
     var concat = sortAlpha(like.concat(exercise).concat(food).concat(sleep).concat(dog));
 

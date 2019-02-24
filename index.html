@@ -10,22 +10,18 @@
   </head>
 
   <body>
-    <!-- Found the chunk of code below here: https://stackoverflow.com/questions/41064873/adding-a-full-width-banner-and-making-it-bootstrap-responsive -->
     <div class="header-row" id="header-row" style="padding: 0px; overflow:hidden; height:100px;">
-        <div class="row">
-           <div class="col-xs-12">
-              <a class="navbar-brand logo" href="index.html">
-          <!-- place your image here -->
-                 <img src="http://placekitten.com/g/1200/600" alt="company logo" style="width: 100%;">
-              </a>
-           </div>
-        </div>
-     </div>
-  </div>
-
+      <div class="row">
+         <div class="col-xs-12">
+            <a class="navbar-brand logo" href="index.html">
+              <img src="http://placekitten.com/g/1200/600" alt="company logo" style="width: 100%;">
+            </a>
+         </div>
+      </div>
+   </div>
 
     <div class="container">
-      <h1>There are many moods of Nemo. Find out which one you are.</h1>
+      <h1><strong>Buzzfeed-esque Quiz:</strong> There are many moods of Nemo. Find out which one you are.</h1>
 
       <form id="Buzzfeed">
 
@@ -49,24 +45,32 @@
         </div>
       </div><br>
 
-        <div class="radio">
-          <label>
-            <input type="radio" name="flavor" value="chocolate" checked>
-            Chocolate
-          </label>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>1. Which do you prefer?</p>
+            <div class="radio">
+              <label>
+                <input type="radio" name="food" value="a" checked>
+                A: Dressing up and going out.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="food" value="vanilla">
+                B: Staying home and sleeping.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="flavor" value="cookiesandcream">
+                C: Netflix and Pizza
+              </label>
+            </div>
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="flavor" value="vanilla">
-            Vanilla
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="flavor" value="cookiesandcream">
-            Cookies & Cream
-          </label>
-        </div>
+      </div>
+    
 
 
         <div class="form-group">

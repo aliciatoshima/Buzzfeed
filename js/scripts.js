@@ -18,6 +18,8 @@ $(document).ready(function() {
       name = "Kaonashi";
     }
 
+    if (like === "a") 
+
     $("#name1").text(name);
     // $("#output").text(like);
     // $("#output").text(exercise);

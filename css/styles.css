@@ -5,6 +5,12 @@
   margin: 5%;
 }
 
+.header-row img {
+  width: 30%;
+  float: left;
+  margin-left: 5%;
+}
+
 #output {
   display: none;
 }

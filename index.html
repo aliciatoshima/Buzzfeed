@@ -10,179 +10,229 @@
   </head>
 
   <body>
-    <div class="header-row" id="header-row" style="padding: 0px; overflow:hidden; height:100px;">
-      <div class="row">
-         <div class="col-xs-12">
-            <a class="navbar-brand logo" href="index.html">
-              <img src="http://placekitten.com/g/1200/600" alt="company logo" style="width: 100%;">
-            </a>
-         </div>
-      </div>
-   </div>
 
     <div class="container">
-      <h1><strong>Buzzfeed-esque Quiz:</strong> There are many moods of Nemo; which cat are you?</h1>
-      <!-- <img src="https://www.instagram.com/chubbybatman420/nemo_bathroom_files/47694252_835933063405369_2999552232644411392_n.jpg" alt="nemo"> -->
 
-      <form id="Buzzfeed">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="header-row" id="header-row" style="padding: 0px; overflow:hidden; height:100px;">
+        <div class="row">
+           <div class="col-xs-12">
+              <a class="navbar-brand logo" href="index.html">
+                <img src="https://www.everplans.com/sites/default/files/styles/article_header_image/public/buzzfeed-750.jpg?itok=j746n1P0" alt="buzzfeed logo">
+              </a>
+           </div>
+        </div>
+     </div>
+
+      <div class="header-row" id="header-row" style="padding: 0px; overflow:hidden; height:100px;">
+        <div class="row">
+           <div class="col-xs-12">
+              <a class="navbar-brand logo" href="index.html">
+                <img src="http://placekitten.com/g/1200/600" alt="company logo" style="width: 100%;">
+              </a>
+           </div>
+        </div>
+     </div>
+
+      <div class="container">
+        <h1><strong>Buzzfeed-esque Quiz:</strong> There are many moods of Nemo; which cat are you?</h1>
+        <!-- <img src="https://www.instagram.com/chubbybatman420/nemo_bathroom_files/47694252_835933063405369_2999552232644411392_n.jpg" alt="nemo"> -->
+
+        <form id="Buzzfeed">
+
+          <div class="container">
+            <div class="row">
+            <div class="col-md-6">
+              <p>Please enter your name or you will be referred to as No Face.</p>
+              <div class="form-group">
+                <label for="name">You Name:</label>
+                <input id="name" class="form-control" type="text">
+              </div>
+              <p>This is Kaonashi aka No Face from Spirited Away. If you haven't watched it, I'm really not sure what you have been doing with your life and you should really get on it. Also, this will be your new name should you choose to remain anonymous.</p>
+            </div>
+            <div class="col-md-6">
+              <figure>
+                <div class="kaonashi">
+                  <img src="https://myanimelist.cdn-dena.com/images/characters/16/64987.jpg" alt="kaonashi">
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div><br>
 
         <div class="container">
           <div class="row">
-          <div class="col-md-6">
-            <p>Please enter your name or you will be referred to as No Face.</p>
-            <div class="form-group">
-              <label for="name">You Name:</label>
-              <input id="name" class="form-control" type="text">
-            </div>
-            <p>This is Kaonashi aka No Face from Spirited Away. If you haven't watched it, I'm really not sure what you have been doing with your life and you should really get on it.</p>
-          </div>
-          <div class="col-md-6">
-            <figure>
-              <div class="kaonashi">
-                <img src="https://myanimelist.cdn-dena.com/images/characters/16/64987.jpg" alt="kaonashi">
+            <div class="col-md-6">
+              <p>1. Which do you prefer?</p>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="like" value="a" checked>
+                  A: Dressing up and posing for instagram pics
+                </label>
               </div>
-            </figure>
-          </div>
-        </div>
-      </div><br>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <p>1. Which do you prefer?</p>
-            <div class="radio">
-              <label>
-                <input type="radio" name="like" value="a" checked>
-                A: Dressing up and posing for instagram pics
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="like" value="b">
-                B: Being left alone and sleeping in my bed under the covers.
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="like" value="c">
-                C: Chilling around the house but not opposed to the occasional chin rub and head pat.
-              </label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="like" value="b">
+                  B: Being left alone and sleeping in my bed under the covers.
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="like" value="c">
+                  C: Chilling around the house but not opposed to the occasional chin rub and head pat.
+                </label>
+              </div>
             </div>
           </div>
-        </div>
-      </div><br>
+        </div><br>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <p>2. Your ideal form of exercise?</p>
-            <div class="radio">
-              <label>
-                <input type="radio" name="exercise" value="a" checked>
-                A: Chasing the red dot; the enemy muyst be destroyed at all costs.
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="exercise" value="b">
-                B: I'm really not that into moving around. I'd rather sleep. <em>zzzz.....</em>
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="exercise" value="c">
-                C: I might chase the mouse but only for some cheese ;)
-              </label>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>2. Your ideal form of exercise?</p>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="exercise" value="a" checked>
+                  A: Chasing the red dot; the enemy muyst be destroyed at all costs.
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="exercise" value="b">
+                  B: I'm really not that into moving around. I'd rather sleep. <em>zzzz.....</em>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="exercise" value="c">
+                  C: I might chase the mouse but only for some cheese ;)
+                </label>
+              </div>
             </div>
           </div>
-        </div>
-      </div><br>
+        </div><br>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <p>3. Your favorite meal?</p>
-            <div class="radio">
-              <label>
-                <input type="radio" name="food" value="a" checked>
-                A: Rib Eye Steak
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="food" value="b">
-                B: Maguro Tuna Sashimi
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="food" value="c">
-                C: Roast Chicken and Ham!
-              </label>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>3. Your favorite meal?</p>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="food" value="a" checked>
+                  A: Rib Eye Steak
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="food" value="b">
+                  B: Maguro Tuna Sashimi
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="food" value="c">
+                  C: Roast Chicken and Ham!
+                </label>
+              </div>
             </div>
           </div>
-        </div>
-      </div><br>
+        </div><br>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <p>4. Where is your ideal sleeping spot?</p>
-            <div class="radio">
-              <label>
-                <input type="radio" name="sleep" value="a" checked>
-                A: On the pillow because Mom kept it warm for me.
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="sleep" value="b">
-                B: In the middle of the bed because it is mine.
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="sleep" value="c">
-                C: High up in my cat tree so I can observe all of my subjects
-              </label>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>4. Where is your ideal sleeping spot?</p>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="sleep" value="a" checked>
+                  A: On the pillow because Mom kept it warm for me.
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="sleep" value="b">
+                  B: In the middle of the bed because it is mine.
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="sleep" value="c">
+                  C: High up in my cat tree so I can observe all of my subjects
+                </label>
+              </div>
             </div>
           </div>
-        </div>
-      </div><br>
+        </div><br>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <p>5. What are your feelings about dogs??</p>
-            <div class="radio">
-              <label>
-                <input type="radio" name="dog" value="a" checked>
-                A: They are my nemesis and I will take any opportunity to attack.
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="dog" value="b">
-                B: I think they would make good friends.
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="dog" value="c">
-                C: I think they might be cool.
-              </label>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>5. What are your feelings about dogs??</p>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="dog" value="a" checked>
+                  A: They are my nemesis and I will take any opportunity to attack.
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="dog" value="b">
+                  B: I think they would make good friends.
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="dog" value="c">
+                  C: I think they might be cool.
+                </label>
+              </div>
             </div>
           </div>
-        </div>
-      </div><br>
+        </div><br>
 
-      <button type="submit" class="btn btn-outline-dark">Tell me what type of cat I am!</button>
-      </form><br>
+        <button type="submit" class="btn btn-outline-dark">Tell me what type of cat I am!</button>
+        </form><br>
 
-      <div id="output">
-        <p>Hey, <span id="name1"></span>.</p>
-      </div><br>
+        <div id="output">
+          <p>Hey, <span id="name1"></span>.</p>
+        </div><br>
 
+      </div>
     </div>
   </body>
 </html>

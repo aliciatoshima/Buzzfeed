@@ -64,7 +64,7 @@ $(document).ready(function() {
     }
 
     $("#name1").text(name);
-     $("#answer1").text(answer);
+    $("#answer1").text(answer);
     $("#output").append(img);
     $("#output").show();
 

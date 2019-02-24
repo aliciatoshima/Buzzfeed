@@ -1,28 +1,73 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Buzzfeed Logic</title>
+    <title>Buzzfeed-esque Quiz</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </head>
+
   <body>
+    <!-- Found the chunk of code below here: https://stackoverflow.com/questions/41064873/adding-a-full-width-banner-and-making-it-bootstrap-responsive -->
+    <div class="header-row" id="header-row" style="padding: 0px; overflow:hidden; height:100px;">
+        <div class="row">
+           <div class="col-xs-12">
+              <a class="navbar-brand logo" href="index.html">
+          <!-- place your image here -->
+                 <img src="http://placekitten.com/g/1200/600" alt="company logo" style="width: 100%;">
+              </a>
+           </div>
+        </div>
+     </div>
+  </div>
+
+
     <div class="container">
+      <h1>There are many moods of Nemo. Find out which one you are.</h1>
 
-
-      <h1>Buzzfeed Logic</h1>
       <form id="Buzzfeed">
-        <div class="form-group">
-          <label for="input1">1st side:</label>
-          <input id="input1" class="form-control" type="text">
+
+        <div class="container">
+          <div class="row">
+          <div class="col-md-6">
+            <p>Please enter your name or you will be referred to as No Face.</p>
+            <div class="form-group">
+              <label for="name">You Name:</label>
+              <input id="name" class="form-control" type="text">
+            </div>
+            <p>This is Kaonashi aka No Face from Spirited Away. If you haven't watched it, I'm really not sure what you have been doing with your life and you should really get on it.</p>
+          </div>
+          <div class="col-md-6">
+            <figure>
+              <div class="kaonashi">
+                <img src="https://myanimelist.cdn-dena.com/images/characters/16/64987.jpg" alt="kaonashi">
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div><br>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="chocolate" checked>
+            Chocolate
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="vanilla">
+            Vanilla
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="cookiesandcream">
+            Cookies & Cream
+          </label>
         </div>
 
-        <div class="form-group">
-          <label for="input2">2nd side:</label>
-          <input id="input2" class="form-control" type="text">
-        </div>
 
         <div class="form-group">
           <label for="input3">3nd side:</label>

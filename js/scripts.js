@@ -1,16 +1,11 @@
 
-// Addition Section:
-
-
-// User interface (or front-end) logic:
-
-// Business logic not included because it will remain the same.
 
 $(document).ready(function() {
   $("form#Buzzfeed").submit(function(event) {
     event.preventDefault();
 
     var name = $("input#name").val();
+
     var like = $("input:radio[name=like]:checked").val();
     var exercise = $("input:radio[name=exercise]:checked").val();
     var food = $("input:radio[name=food]:checked").val();
@@ -18,13 +13,12 @@ $(document).ready(function() {
     var dog = $("input:radio[name=dog]:checked").val();
 
     if (name) {
-       debugger;
-       name 
+      name;
     } else {
-        name = "Kaonashi"
+      name = "Kaonashi";
     }
 
-    $("#output").text(name);
+    $("#name1").text(name);
     // $("#output").text(like);
     // $("#output").text(exercise);
     // $("#output").text(food);
@@ -32,5 +26,6 @@ $(document).ready(function() {
     // $("#output").text(dog);
 
     $("#output").show();
+    // event.preventDefault();
   });
 });

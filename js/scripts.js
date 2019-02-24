@@ -7,8 +7,9 @@
 // Business logic not included because it will remain the same.
 
 $(document).ready(function() {
-  $("form#Buzzfeed").submit(function() {
-
+  $("form#Buzzfeed").submit(function(event) {
+    event.preventDefault();
+    
     var name = $("input#name").val();
     var flavor = $("input:radio[name=like]:checked").val();
     var flavor = $("input:radio[name=exercise]:checked").val();
@@ -26,7 +27,5 @@ $(document).ready(function() {
 
     $("#output").text(answer);
     $("#output").show();
-
-    event.preventDefault();
   });
 });

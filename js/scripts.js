@@ -42,13 +42,13 @@ $(document).ready(function() {
     if (name) {
       debugger;
        name;
-      if (concat.match(/^.aaa*/) || concat.match(/^*aa*/)) {
-         answer = "pinapple Nemo";
+      if (concat.match(/^.aaa*/) || concat.match(/^.aa*/)) {
+         answer = "pineapple Nemo";
          img = pineapple;
-      } else if (concat.match(/^*bbb*/) || concat.match(/^*bb*/)) {
+      } else if (concat.match(/^.bbb*/) || concat.match(/^.bb*/)) {
          answer = "Purrito Nemo";
          img = purrito;
-      } else if (concat.match(/^*ccc*/) || concat.match(/^*cc*/)) {
+      } else if (concat.match(/^.ccc*/) || concat.match(/^.cc*/)) {
          answer = "Bean Bag Nemo!";
          img = bean_bag;
       } else {
@@ -57,13 +57,13 @@ $(document).ready(function() {
       }
     } else {
        name = "Kaonashi";
-      if (concat.match(/^.aaa*/) || concat.match(/^*aa*/)) {
-         answer = "pinapple Nemo";
+      if (concat.match(/^.aaa*/) || concat.match(/^.aa*/)) {
+         answer = "pineapple Nemo";
          img = pineapple;
-      } else if (concat.match(/^*bbb*/) || concat.match(/^*bb*/)) {
+      } else if (concat.match(/^.bbb*/) || concat.match(/^.bb*/)) {
          answer = "Purrito Nemo";
          img = purrito;
-      } else if (concat.match(/^*ccc*/) || concat.match(/^*cc*/)) {
+      } else if (concat.match(/^.ccc*/) || concat.match(/^.cc*/)) {
          answer = "Bean Bag Nemo!";
          img = bean_bag;
       } else {

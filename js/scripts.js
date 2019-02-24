@@ -3,6 +3,7 @@
 $(document).ready(function() {
   $("form#Buzzfeed").submit(function(event) {
     event.preventDefault();
+    // $("img#output").empty()
 
     var name = $("input#name").val();
 
@@ -16,23 +17,29 @@ $(document).ready(function() {
     var sleep = $("input:radio[name=sleep]:checked").val();
     var dog = $("input:radio[name=dog]:checked").val();
 
-    var pinapple = new Image();
-      pineapple.src = "https://www.bluleadz.com/hs-fs/hubfs/Blog_pics/PrisonMike.jpeg?width=598&name=PrisonMike.jpeg";
+    var pineapple = new Image();
+    pineapple.src = "images/pineapple.jpg";
+    pineapple.alt = "pineapple cat";
+    pineapple.style.width = "300px";
 
     var purrito = new Image();
-      purrito.src = "https://www.bluleadz.com/hs-fs/hubfs/Blog_pics/PrisonMike.jpeg?width=598&name=PrisonMike.jpeg";
+    purrito.src = "images/purrito.JPG";
+    pineapple.alt = "pineapple cat";
+    pineapple.style.width = "300px";
 
     var bean_bag = new Image();
-      bean_bag.src = "https://www.bluleadz.com/hs-fs/hubfs/Blog_pics/PrisonMike.jpeg?width=598&name=PrisonMike.jpeg";
+    bean_bag.src = "https://www.bluleadz.com/hs-fs/hubfs/Blog_pics/PrisonMike.jpeg?width=598&name=PrisonMike.jpeg";
+    pineapple.alt = "pineapple cat";
+    pineapple.style.width = "300px";
 
     var img = new Image();
-      img.src = "https://www.bluleadz.com/hs-fs/hubfs/Blog_pics/PrisonMike.jpeg?width=598&name=PrisonMike.jpeg";
+    img.src = "https://www.bluleadz.com/hs-fs/hubfs/Blog_pics/PrisonMike.jpeg?width=598&name=PrisonMike.jpeg";
 
     var concat = sortAlpha(like.concat(exercise).concat(food).concat(sleep).concat(dog));
 
     if (name) {
+      debugger;
        name;
-       debugger;
       if (concat.match(/^.aaa*/) || concat.match(/^*aa*/)) {
          answer = "pinapple Nemo";
          img = pineapple;
@@ -65,7 +72,7 @@ $(document).ready(function() {
 
     $("#name1").text(name);
     $("#answer1").text(answer);
-    $("#output").append(img);
+    $("#output").append(img).last();
     $("#output").show();
 
   });

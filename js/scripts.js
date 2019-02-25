@@ -44,11 +44,11 @@ $(document).ready(function() {
     if (name) {
        name;
       if (concat.match(/aaa/gm)) {
-        answer = "Pineapple Nemo";
+        answer = "Pineapple Nemo!";
         img = pineapple;
         choice = "A's"
       } else if (concat.match(/bbb/gm)) {
-        answer = "Purrito Nemo";
+        answer = "Purrito Nemo!";
         img = purrito;
         choice = "B's"
       } else if (concat.match(/ccc/gm)) {
@@ -62,12 +62,12 @@ $(document).ready(function() {
     } else {
        name = "Kaonashi";
       if (concat.match(/aaa/gm)) {
-        answer = "Pineapple Nemo";
+        answer = "Pineapple Nemo!";
         img = pineapple;
         choice = "A's"
         // $("img").fadeIn()
       } else if (concat.match(/bbb/gm)) {
-        answer = "Purrito Nemo";
+        answer = "Purrito Nemo!";
         img = purrito;
         choice = "B's"
       } else if (concat.match(/ccc/gm)) {

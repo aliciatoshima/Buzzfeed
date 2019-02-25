@@ -35,46 +35,49 @@ $(document).ready(function() {
     var img = new Image();
     img.src = "images/christmas.JPG";
     img.alt = "christmas cat";
-    img.style.width = "300px";
+    img.style.width = "300px"
+    img.style.transform="rotate(90deg)";
+
 
     var concat = sortAlpha(like.concat(exercise).concat(food).concat(sleep).concat(dog));
 
     if (name) {
-      debugger;
        name;
-      if (concat.match(/^.aaa*/) || concat.match(/^.aa*/)) {
-         answer = "pineapple Nemo";
-         img = pineapple;
-      } else if (concat.match(/^.bbb*/) || concat.match(/^.bb*/)) {
-         answer = "Purrito Nemo";
-         img = purrito;
-      } else if (concat.match(/^.ccc*/) || concat.match(/^.cc*/)) {
-         answer = "Bean Bag Nemo!";
-         img = bean_bag;
+      if (concat.match(/aaa/gm)) {
+        answer = "Pineapple Nemo";
+        img = pineapple;
+        $("img").fadeIn()
+      } else if (concat.match(/bbb/gm)) {
+        answer = "Purrito Nemo";
+        img = purrito;
+      } else if (concat.match(/ccc/gm)) {
+        answer = "Bean Bag Nemo!";
+        // img = bean_bag;
       } else {
-         answer ="Christmas Nemo, just because!"
-         img;
+        answer ="Christmas Nemo, just because!";
       }
     } else {
        name = "Kaonashi";
-      if (concat.match(/^.aaa*/) || concat.match(/^.aa*/)) {
-         answer = "pineapple Nemo";
-         img = pineapple;
-      } else if (concat.match(/^.bbb*/) || concat.match(/^.bb*/)) {
-         answer = "Purrito Nemo";
-         img = purrito;
-      } else if (concat.match(/^.ccc*/) || concat.match(/^.cc*/)) {
-         answer = "Bean Bag Nemo!";
-         img = bean_bag;
+      if (concat.match(/aaa/gm)) {
+        answer = "Pineapple Nemo";
+        img = pineapple;
+        // $("img").fadeIn()
+      } else if (concat.match(/bbb/gm)) {
+        answer = "Purrito Nemo";
+        img = purrito;
+      } else if (concat.match(/ccc/gm)) {
+        answer = "Bean Bag Nemo!";
+        img = bean_bag;
       } else {
-         answer ="Christmas Nemo, just because!"
-         img;
+        answer ="Christmas Nemo, just because!";
       }
     }
 
+    // alert("Thanks for submitting this form! Your type of cat is: "+ answer)
+
     $("#name1").text(name);
     $("#answer1").text(answer);
-    $("#output").append(img).last();
+    $("#output").after(img).last();
     $("#output").show();
 
   });

@@ -13,4 +13,8 @@
 
 #output {
   display: none;
+  margin: 10px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

@@ -17,7 +17,6 @@ This project is an HTML form that asks users to input answers into a form (Buzzf
 
 ## Known Bugs
 
-* I had a little trouble with using regex for my logic so it's not really as defined or accurate as I would like it to be. I wanted to based the logic of "You chose mostly a's, so you got this answer", but it was quite challenging so I would like to hear your solution for this.
 * Another issue that I had was that every time the submit button was hit, another image would be appended to the previous image. I though using `.last()` would solve the problem of maybe `.empty()`, but I wasn't able to figure it out
 
 ## Support and contact details

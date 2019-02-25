@@ -11,6 +11,11 @@
   margin-left: 5%;
 }
 
+.nemo img {
+  transform: rotate(90deg);
+  height: 400px;
+  width: 400px;
+}
 #output {
   display: none;
   margin: 10px;

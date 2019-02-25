@@ -46,30 +46,37 @@ $(document).ready(function() {
       if (concat.match(/aaa/gm)) {
         answer = "Pineapple Nemo";
         img = pineapple;
-        $("img").fadeIn()
+        choice = "A's"
       } else if (concat.match(/bbb/gm)) {
         answer = "Purrito Nemo";
         img = purrito;
+        choice = "B's"
       } else if (concat.match(/ccc/gm)) {
         answer = "Bean Bag Nemo!";
         // img = bean_bag;
+        choice = "C's"
       } else {
         answer ="Christmas Nemo, just because!";
+        choice = "mostly inconsistent answers"
       }
     } else {
        name = "Kaonashi";
       if (concat.match(/aaa/gm)) {
         answer = "Pineapple Nemo";
         img = pineapple;
+        choice = "A's"
         // $("img").fadeIn()
       } else if (concat.match(/bbb/gm)) {
         answer = "Purrito Nemo";
         img = purrito;
+        choice = "B's"
       } else if (concat.match(/ccc/gm)) {
         answer = "Bean Bag Nemo!";
         img = bean_bag;
+        choice = "C's"
       } else {
         answer ="Christmas Nemo, just because!";
+        choice = "mostly inconsistent answers"
       }
     }
 
@@ -77,7 +84,8 @@ $(document).ready(function() {
 
     $("#name1").text(name);
     $("#answer1").text(answer);
-    $("#output").after(img).last();
+    $("#choice1").text(choice);
+    $("#output").after(img).children(img).last();
     $("#output").show();
 
   });

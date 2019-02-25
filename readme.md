@@ -6,7 +6,7 @@
 
 ## Description
 
-This project is an HTML form that asks users to input answers into a form (Buzzfeed-esque quiz) and will return what kind of cat they are. Link to GitHub pages can be found here: https://aliciatoshima.github.io/portfolio/. It features an image of Alicia's roommate's cat (Nemo) and a series of questions. This project is an exercise in using HTML (and showcasing all of the elements learned), CSS, Bootstrap, JavaScript and jquery, and demonstrating proper indentation and spacing (hopefully).
+This project is an HTML form that asks users to input answers into a form (Buzzfeed-esque quiz) and will return what kind of cat they are. Link to GitHub pages can be found here: https://aliciatoshima.github.io/Buzzfeed/. It features an image of Alicia's roommate's cat (Nemo) and a series of questions. This project is an exercise in using HTML (and showcasing all of the elements learned), CSS, Bootstrap, JavaScript and jquery, and demonstrating proper indentation and spacing (hopefully).
 
 ## Setup/Installation Requirements
 

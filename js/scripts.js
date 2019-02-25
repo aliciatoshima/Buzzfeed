@@ -85,8 +85,9 @@ $(document).ready(function() {
     $("#name1").text(name);
     $("#answer1").text(answer);
     $("#choice1").text(choice);
-    $("#output").after(img).children(img).last();
+    $("#img").empty().append(img);
     $("#output").show();
+    $("#img").show();
 
   });
 });
